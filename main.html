@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuncay Usta | Dijital Menü</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #d35400; /* Sıcak turuncu/kahve tonu */
+            --secondary-color: #2c3e50;
+            --bg-color: #fdfaf5;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1579372781878-6761b1be94c2?auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-weight: 300;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: -30px auto 40px;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        /* Kategori Başlıkları */
+        .category-title {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            margin: 40px 0 15px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Ürün Kartı */
+        .menu-item {
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px;
+            margin-bottom: 12px;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .item-info {
+            flex: 1;
+        }
+
+        .item-name {
+            font-weight: 600;
+            font-size: 17px;
+            color: #222;
+        }
+
+        .item-price {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 18px;
+            margin-left: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 13px;
+            color: #888;
+            background: #fff;
+            margin-top: 50px;
+        }
+
+        /* Hareketli efekt */
+        .menu-item:hover {
+            transform: translateY(-2px);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meşhur Sütlaççı <br> Tuncay Usta</h1>
+    <p>Geleneksel Lezzet Durağı</p>
+</header>
+
+<div class="container">
+    
+    <!-- TATLILAR -->
+    <div class="category-title">Tatlılar</div>
+    
+    <div class="menu-item">
+        <div class="item-name">Sütlaç</div>
+        <div class="item-price">120 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Sütlaç (Paket)</div>
+        <div class="item-price">140 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Baklava</div>
+        <div class="item-price">300 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Tulumba</div>
+        <div class="item-price">250 TL</div>
+    </div>
+
+    <!-- TOST & SANDVİÇ -->
+    <div class="category-title">Atıştırmalıklar</div>
+
+    <div class="menu-item">
+        <div class="item-name">Tost</div>
+        <div class="item-price">150 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Sebzeli Tost</div>
+        <div class="item-price">175 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Sandviç</div>
+        <div class="item-price">175 TL</div>
+    </div>
+
+    <!-- SICAK İÇECEKLER -->
+    <div class="category-title">Sıcak İçecekler</div>
+
+    <div class="menu-item">
+        <div class="item-name">Çay</div>
+        <div class="item-price">20 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Türk Kahvesi</div>
+        <div class="item-price">100 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Nescafe</div>
+        <div class="item-price">60 TL</div>
+    </div>
+
+    <!-- SOĞUK İÇECEKLER -->
+    <div class="category-title">Soğuk İçecekler</div>
+
+    <div class="menu-item">
+        <div class="item-name">Su</div>
+        <div class="item-price">10 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Soda</div>
+        <div class="item-price">20 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Meyveli Soda</div>
+        <div class="item-price">25 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Ayran</div>
+        <div class="item-price">25 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Cola</div>
+        <div class="item-price">60 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Didi</div>
+        <div class="item-price">50 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Dimes</div>
+        <div class="item-price">20 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Dimes (Teneke)</div>
+        <div class="item-price">40 TL</div>
+    </div>
+
+    <!-- KİLO İLE ÜRÜNLER -->
+    <div class="category-title">Kilo İle Ürünler</div>
+
+    <div class="menu-item">
+        <div class="item-name">Yaprak Sarma (Kg)</div>
+        <div class="item-price">500 TL</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Soğuk Mezeler (Kg)</div>
+        <div class="item-price">500 TL</div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2024 Meşhur Sütlaççı Tuncay Usta <br>
+    Afiyet Olsun!
+</footer>
+
+</body>
+</html>
