@@ -7,120 +7,127 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #d35400; /* Sıcak turuncu/kahve tonu */
-            --secondary-color: #2c3e50;
-            --bg-color: #fdfaf5;
+            --subasi-yesil: #0b4a32; /* Logodaki koyu yeşil */
+            --subasi-kahve: #6b4423; /* Logodaki kahverengi tonu */
+            --subasi-krem: #fdf6e9;  /* Logodaki krem arka plan */
+            --beyaz: #ffffff;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--bg-color);
+            background-color: var(--subasi-krem);
             color: #333;
         }
 
         header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1579372781878-6761b1be94c2?auto=format&fit=crop&w=800&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
+            background-color: var(--beyaz);
             text-align: center;
-            padding: 60px 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            padding: 40px 20px 60px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-bottom: 3px solid var(--subasi-yesil);
+        }
+
+        .logo {
+            max-width: 180px; /* Logonun boyutu */
+            height: auto;
+            margin-bottom: 15px;
         }
 
         header h1 {
             margin: 0;
-            font-size: 32px;
+            font-size: 24px;
             font-weight: 700;
-            letter-spacing: 1px;
+            color: var(--subasi-yesil);
+            text-transform: uppercase;
         }
 
         header p {
-            margin: 10px 0 0;
-            font-weight: 300;
-            font-style: italic;
-            opacity: 0.9;
+            margin: 5px 0 0;
+            font-weight: 400;
+            color: var(--subasi-kahve);
+            font-size: 14px;
+            letter-spacing: 1px;
         }
 
         .container {
             max-width: 500px;
-            margin: -30px auto 40px;
-            padding: 0 20px;
+            margin: -25px auto 40px;
+            padding: 0 15px;
             position: relative;
         }
 
         /* Kategori Başlıkları */
         .category-title {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 50px;
-            margin: 40px 0 15px;
+            background-color: var(--subasi-yesil);
+            color: var(--subasi-krem);
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 35px 0 15px;
             font-size: 18px;
             font-weight: 600;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(11, 74, 50, 0.2);
+            border-bottom: 3px solid var(--subasi-kahve);
         }
 
         /* Ürün Kartı */
         .menu-item {
-            background: white;
+            background: var(--beyaz);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 18px;
-            margin-bottom: 12px;
-            border-radius: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            border-left: 5px solid var(--primary-color);
-        }
-
-        .item-info {
-            flex: 1;
+            padding: 16px;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+            border-right: 4px solid var(--subasi-kahve);
         }
 
         .item-name {
             font-weight: 600;
-            font-size: 17px;
+            font-size: 16px;
             color: #222;
         }
 
         .item-price {
             font-weight: 700;
-            color: var(--primary-color);
-            font-size: 18px;
-            margin-left: 15px;
+            color: var(--subasi-yesil);
+            font-size: 17px;
+            background: #f0f7f4;
+            padding: 5px 10px;
+            border-radius: 6px;
         }
 
         footer {
             text-align: center;
             padding: 40px 20px;
             font-size: 13px;
-            color: #888;
-            background: #fff;
-            margin-top: 50px;
+            color: var(--subasi-kahve);
+            font-weight: 600;
         }
 
-        /* Hareketli efekt */
-        .menu-item:hover {
-            transform: translateY(-2px);
-            transition: 0.3s;
+        /* Hafif dokunuş animasyonu */
+        .menu-item:active {
+            transform: scale(0.98);
+            background-color: #fafafa;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Tarihi Subaşı  <br> Tatlıcısı</h1>
+    <!-- Logo buraya gelecek. Dosya adının logo.png olduğundan emin ol -->
+    <img src="logo.png" alt="Tarihi Subaşı Tatlıcısı Logo" class="logo">
+    <h1>Tarihi Subaşı Tatlıcısı</h1>
     <p>Meşhur Tuncay Usta Sütlacı</p>
 </header>
 
 <div class="container">
     
     <!-- TATLILAR -->
-    <div class="category-title">Tatlılar</div>
+    <div class="category-title">Meşhur Tatlılarımız</div>
     
     <div class="menu-item">
         <div class="item-name">Sütlaç</div>
@@ -237,8 +244,8 @@
 </div>
 
 <footer>
-    &copy; 2024 Meşhur Sütlaççı Tuncay Usta <br>
-    Afiyet Olsun!
+    &copy; 2024 Tarihi Subaşı Tatlıcısı <br>
+    Tuncay Usta | Afiyet Olsun!
 </footer>
 
 </body>
